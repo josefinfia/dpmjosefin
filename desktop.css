@@ -1,0 +1,58 @@
+.logo {
+    padding-left: 20px;
+} 
+.toggle-menu {
+    display: none;
+}
+
+.site-navigation {
+    
+    position: static;
+
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around; /* flyttar objekten till höger i raden */
+    align-items: flex-end; /*  flyttar raden längst ner i containern */
+}
+.site-navigation a {
+    display: inline-block;
+    font-size: 1rem;
+    
+}
+.site-navigation a:hover {
+    background-color: black;
+    color: #b68345;     
+}
+
+
+
+/*FOOTER GRID*/
+.site-footer .grid-container { 
+    margin: 0 auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contact links villkor social-links"
+    ;
+}
+.grid-item {
+    justify-content: flex-start;
+    text-align: start;
+}
+.site-footer .contact {
+    grid-area: contact;
+}
+.site-footer .links {
+    grid-area: links;
+}
+.site-footer .villkor {
+    grid-area: villkor;
+}
+.site-footer .social-links {
+    grid-area: social-links;
+}
+
+/*OM OSS SIDA*/
+
